@@ -1,0 +1,285 @@
+/* CORPORATE PROFESSIONAL - REMOTE SOFTWARE ENGINEER RESUME STYLES */
+:root {
+    --primary: #1e293b;
+    --accent: #334155;
+    --accent-light: #64748b;
+    --text-main: #334155;
+    --text-muted: #64748b;
+    --bg-light: #f8fafc;
+    --border: #e2e8f0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-main);
+    background-color: #cbd5e1;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    font-size: 10px;
+    line-height: 1.4;
+}
+
+.resume-container {
+    width: 210mm;
+    height: 297mm;
+    background: white;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 40px 50px;
+}
+
+/* HEADER SECTION */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--primary);
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+}
+
+.header-left .name {
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: var(--primary);
+}
+
+.header-left .name .bold {
+    font-weight: 900;
+}
+
+.header-left .title {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--accent-light);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.header-right {
+    text-align: right;
+    font-size: 9.5px;
+    font-weight: 500;
+}
+
+.contact-line {
+    margin-bottom: 2px;
+    color: var(--text-muted);
+}
+
+.contact-line i {
+    color: var(--primary);
+    width: 15px;
+}
+
+/* SECTIONS */
+.section {
+    margin-bottom: 22px;
+}
+
+.section-label {
+    font-size: 12px;
+    font-weight: 900;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 6px;
+    margin-bottom: 12px;
+}
+
+.summary-text {
+    font-size: 10px;
+    line-height: 1.5;
+    color: var(--text-main);
+    text-align: justify;
+}
+
+/* SKILLS GRID */
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.skill-category h3 {
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 5px;
+}
+
+.skill-category p {
+    font-size: 9.5px;
+    color: var(--text-main);
+}
+
+/* EXPERIENCE */
+.experience-item {
+    margin-bottom: 18px;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.experience-item:hover {
+    background: var(--bg-light);
+}
+
+.exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 4px;
+}
+
+.role {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.time {
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--accent-light);
+}
+
+.exp-meta {
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--accent-light);
+    margin-bottom: 8px;
+}
+
+.company {
+    color: var(--accent);
+}
+
+.location {
+    font-style: italic;
+    font-weight: 400;
+    margin-left: 8px;
+}
+
+.duties {
+    list-style: none;
+    padding-left: 5px;
+}
+
+.duties li {
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 4px;
+    font-size: 10px;
+}
+
+.duties li::before {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+    font-size: 9px;
+}
+
+/* BOTTOM SPLIT */
+.bottom-split {
+    display: flex;
+    gap: 40px;
+}
+
+.bottom-split .section.half {
+    flex: 1;
+}
+
+.edu-item, .cert-item {
+    margin-bottom: 8px;
+}
+
+.edu-item strong, .cert-item strong {
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.edu-item p, .cert-item p {
+    font-size: 9.5px;
+    color: var(--text-muted);
+}
+
+.edu-item .right {
+    float: right;
+    font-weight: 600;
+}
+
+/* PDF DOWNLOAD BUTTON */
+#download-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 14px 28px;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(30, 41, 59, 0.3);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#download-btn::before {
+    content: "\f019";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+
+#download-btn:hover {
+    transform: translateY(-5px);
+    background-color: #000;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* PRINT MEDIA */
+@media print {
+    body {
+        padding: 0;
+        background: none;
+    }
+
+    .resume-container {
+        width: 100%;
+        height: 100%;
+        box-shadow: none;
+        margin: 0;
+        padding: 40px 50px;
+    }
+
+    #download-btn {
+        display: none;
+    }
+
+    @page {
+        margin: 0;
+        size: A4;
+    }
+}

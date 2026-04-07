@@ -1,0 +1,293 @@
+/* EXECUTIVE ATS-OPTIMIZED PREMIUM RESUME STYLES */
+:root {
+    --primary: #0f172a;
+    --accent: #2563eb;
+    --text-main: #334155;
+    --text-muted: #64748b;
+    --border: #e2e8f0;
+    --bg-light: #f8fafc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-main);
+    background-color: #f1f5f9;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    font-size: 10px;
+    line-height: 1.4;
+}
+
+.resume-wrapper {
+    width: 210mm;
+    height: 297mm;
+    background: white;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 40px 50px;
+}
+
+/* HEADER SECTION (ATS FRIENDLY) */
+.header {
+    text-align: left;
+    margin-bottom: 25px;
+    border-bottom: 2px solid var(--primary);
+    padding-bottom: 15px;
+}
+
+.name {
+    font-size: 26px;
+    font-weight: 800;
+    color: var(--primary);
+    letter-spacing: -1px;
+    margin-bottom: 4px;
+}
+
+.name .accent {
+    color: var(--accent);
+}
+
+.role {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--text-muted);
+    letter-spacing: 1px;
+}
+
+.contact-info {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 9.5px;
+    font-weight: 500;
+}
+
+.contact-node {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--text-main);
+}
+
+.contact-node i {
+    color: var(--accent);
+}
+
+.header-links {
+    display: flex;
+    gap: 15px;
+}
+
+.header-links a {
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.header-links a:hover {
+    color: var(--accent);
+}
+
+/* SECTIONS (STANDARD HEADINGS FOR ATS) */
+.section {
+    margin-bottom: 18px;
+}
+
+.section-title {
+    font-size: 12px;
+    font-weight: 800;
+    color: var(--primary);
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 4px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* SUMMARY */
+.summary {
+    font-size: 10.5px;
+    line-height: 1.5;
+    text-align: justify;
+    color: var(--text-main);
+}
+
+/* SKILLS GRID (OPTIMIZED FOR PARSING) */
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.skill-group h3 {
+    font-size: 10px;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 4px;
+}
+
+.skill-group p {
+    font-size: 10px;
+    color: var(--text-main);
+    line-height: 1.4;
+}
+
+/* EXPERIENCE (STAR METHOD) */
+.experience-block {
+    margin-bottom: 15px;
+}
+
+.exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 2px;
+}
+
+.job-entry {
+    font-size: 11.5px;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.dates {
+    font-size: 9.5px;
+    font-weight: 600;
+    color: var(--accent);
+}
+
+.org-info {
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--text-muted);
+    margin-bottom: 6px;
+}
+
+.sep {
+    margin: 0 8px;
+}
+
+.achievements {
+    list-style: none;
+    padding-left: 2px;
+}
+
+.achievements li {
+    position: relative;
+    padding-left: 18px;
+    margin-bottom: 4px;
+    font-size: 10px;
+    color: var(--text-main);
+}
+
+.achievements li::before {
+    content: "■";
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-size: 8px;
+    top: 2px;
+}
+
+/* EDUCATION & CERTS */
+.col-split {
+    display: flex;
+    gap: 40px;
+}
+
+.section.half {
+    flex: 1;
+}
+
+.edu-item, .cert-item {
+    margin-bottom: 8px;
+}
+
+.edu-item strong, .cert-item strong {
+    font-size: 10.5px;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.edu-item p, .cert-item p {
+    font-size: 9.5px;
+    color: var(--text-muted);
+}
+
+.edu-item p .year {
+    float: right;
+    font-weight: 600;
+}
+
+/* DOWNLOAD BUTTON */
+#download-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 14px 28px;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.3);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#download-btn::before {
+    content: "\f019";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+
+#download-btn:hover {
+    transform: translateY(-5px);
+    background-color: #000;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+}
+
+/* PRINT MEDIA */
+@media print {
+    body {
+        padding: 0;
+        background: none;
+    }
+
+    .resume-wrapper {
+        width: 100%;
+        height: 100%;
+        box-shadow: none;
+        margin: 0;
+        padding: 40px 50px;
+    }
+
+    #download-btn {
+        display: none;
+    }
+
+    @page {
+        margin: 0;
+        size: A4;
+    }
+}
