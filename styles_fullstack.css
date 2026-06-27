@@ -24,8 +24,8 @@ body {
     display: flex;
     justify-content: center;
     padding: 40px 0;
-    font-size: 10px;
-    line-height: 1.4;
+    font-size: 9.6px;
+    line-height: 1.35;
 }
 
 .resume-container {
@@ -41,7 +41,7 @@ body {
 /* HEADER SECTION */
 .header {
     text-align: center;
-    padding: 30px 40px 20px;
+    padding: 15px 40px 10px;
     border-bottom: 2px solid var(--accent);
 }
 
@@ -120,19 +120,19 @@ body {
 
 .left-col {
     flex: 68;
-    padding: 25px 40px;
+    padding: 15px 40px;
     border-right: 1px solid var(--border);
 }
 
 .right-col {
     flex: 32;
-    padding: 25px 30px;
+    padding: 15px 30px;
     background: var(--bg-light);
 }
 
 /* SECTIONS */
 .section {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .section-title {
@@ -163,7 +163,7 @@ body {
 
 /* TIMELINE */
 .timeline-item {
-    margin-bottom: 18px;
+    margin-bottom: 8px;
     position: relative;
     padding-left: 15px;
     border-left: 2px solid var(--accent-soft);
@@ -254,7 +254,7 @@ body {
 
 /* ASIDE SECTIONS */
 .aside-section {
-    margin-bottom: 22px;
+    margin-bottom: 12px;
 }
 
 .aside-title {
