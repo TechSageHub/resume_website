@@ -404,6 +404,33 @@ body {
     box-shadow: 0 15px 30px rgba(5, 150, 105, 0.4);
 }
 
+/* RESPONSIVE MEDIA QUERY */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 0;
+    }
+
+    .resume-container {
+        width: 100%;
+        height: auto;
+        box-shadow: none;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+
+    .left-col {
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+        padding: 20px;
+    }
+
+    .right-col {
+        padding: 20px;
+    }
+}
+
 /* PRINT MEDIA */
 @media print {
     body {

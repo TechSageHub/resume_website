@@ -267,6 +267,29 @@ body {
     box-shadow: 0 15px 30px rgba(0,0,0,0.4);
 }
 
+/* RESPONSIVE MEDIA QUERY */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 0;
+    }
+
+    .resume-wrapper {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        box-shadow: none;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .col-split {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
 /* PRINT MEDIA */
 @media print {
     body {
